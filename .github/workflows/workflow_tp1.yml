@@ -64,7 +64,7 @@ jobs:
           docker run -d --name thingsboard \
             -p 9090:9090 \
             thingsboard/tb-postgres:latest
-
+ 
       - name: Wait for ThingsBoard to be ready
         run: |
           for i in {1..40}; do
